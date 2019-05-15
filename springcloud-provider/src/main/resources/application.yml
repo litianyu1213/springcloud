@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+#需要指明spring:application:name,这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name:
+spring:
+  application:
+    #注册成功后显示的名称
+    name: service-hi
+
+eureka:
+  client:
+    serviceUrl:
+      #注册中心的地址
+      defaultZone: http://localhost:8080/eureka/
+
+  instance:
+    lease-renewal-interval-in-seconds:1
+    lease-expiration-duration-in-seconds:1
+
+
