@@ -31,6 +31,7 @@ public class HelloController {
         System.out.println(1111);
         System.out.println(6666);
         System.out.println(7777);
+        System.out.println("李天雨");
         return schedualServiceHi.HelloUser( user );
     }
 
