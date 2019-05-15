@@ -28,6 +28,7 @@ public class HelloController {
         user.setId(1);
         user.setName("阿萨德撒");
         user.setSex("男");
+        System.out.println(1111);
         System.out.println(6666);
         System.out.println(7777);
         return schedualServiceHi.HelloUser( user );
